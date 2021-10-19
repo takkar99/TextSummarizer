@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TSummarizer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/istyle.css">
+</head>
+<body>
+<div class="body" ng-app="myApp">
+    <div class="wrapper" ng-controller="MyCtrl">
+	<h1 style="color:white;">Text Summarizer</h1>
+<form name="form" action="{{ url_for('output') }}"  method="POST">
+  <textarea cols="100" rows="25" name="textarea" id="textarea"></textarea>   
+<br>
+<br>
+	<div class="button">
+	<input type="submit" class="button" value="SUBMIT">
+	</div>
+</form>
+  </div>
+</div>
+<br><br>
+<div class="footer">
+  <footer>By: Ishaan Takkar</footer>
+</div>
+<body>
+</html>
